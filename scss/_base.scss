@@ -1,0 +1,70 @@
+.container {
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 1288px;
+    width: 100%;
+}
+
+/* Base */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+
+.background-wave {
+    background-image: url(./images/why-we-background.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-position-y: 690px;
+
+}
+
+.logo-icon {
+    fill: var(--color-primary-blue-light);
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    display: inline-block;
+}
+
+
+
+
+
+body {
+    font-weight: 400;
+    color: var(--color-primary-blue-dark);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.17;
+    margin: 0;
+}

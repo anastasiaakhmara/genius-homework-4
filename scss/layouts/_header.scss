@@ -1,0 +1,28 @@
+
+
+
+.header {
+&__nav {
+        display: flex;
+        height: 106px;
+        align-items: center;
+        gap: 240px;
+    }
+        &__menu {
+            display: flex;
+    
+            gap: 56px;
+            align-items: center;
+        }
+                &__icon {
+                    fill: var(--color-primary-blue-dark);
+                }
+        
+        
+                &__contact {
+                    display: flex;
+        
+                    gap: 32px;
+                    align-items: center;
+                }
+}

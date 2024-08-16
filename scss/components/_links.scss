@@ -1,0 +1,15 @@
+.link {
+    text-decoration: none;
+    line-height: 1.5;
+    transition-property: text-shadow;
+    transition-property: color;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    &:hover {
+    
+            text-shadow: 1px 0 0 currentColor;
+            color: var(--color-primary-blue-light);
+    
+        }
+}
+

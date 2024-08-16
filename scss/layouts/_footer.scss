@@ -1,0 +1,61 @@
+.footer {
+
+    background-color: var(--color-primary-blue-dark);
+
+
+    &__link {
+            color: var(--color-primary-white);
+            line-height: 1.17;
+            font-size: 16px;
+            text-decoration: none;
+            transition-property: text-shadow;
+            transition-property: color;
+            transition-timing-function: linear;
+            transition-duration: .2s;
+    
+            &:hover {
+                text-shadow: 1px 0 0 currentColor;
+                color: var(--color-primary-blue-light);
+            }
+        }
+    
+    
+    
+        &__all-links {
+            display: flex;
+            gap: 186px;
+    
+        }
+    
+        &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    
+        &__address {
+            display: flex;
+            gap: 186px;
+    
+        }
+                 &__address-links {
+                     display: flex;
+                     flex-direction: column;
+                     gap: 16px;
+        
+                 }
+              
+    
+        &__container {
+            display: flex;
+            padding-top: 56px;
+            gap: 186px;
+            background-image: url(./images/background-footer.svg);
+        }
+    
+        &__social-media {
+            display: flex;
+            gap: 24px;
+        }
+
+}

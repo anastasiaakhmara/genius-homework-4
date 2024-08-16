@@ -1,0 +1,41 @@
+.star-1 {
+    margin-left: 149px;
+    margin-top: 20px;
+    /* translate: 20px 0; */
+    transform: translateX(20px);
+    max-width: 64px;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+.star-2 {
+
+    margin-top: 9px;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.star-3 {
+    margin-left: 140px;
+    margin-top: 270px;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

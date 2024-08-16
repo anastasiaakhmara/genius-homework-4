@@ -1,0 +1,11 @@
+
+address {
+    font-style: normal;
+
+    &__copyright {
+            color: var(--color-secondary-grey-light);
+            line-height: 1.33;
+            font-size: 13px;
+        }
+       
+    }

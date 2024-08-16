@@ -1,0 +1,25 @@
+.carousel-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-blue-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    fill: var(--color-primary-blue-dark);
+    transition-property: background-color;
+    transition-property: fill;
+    transition-property: border;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+
+    &:hover {
+            background-color: var(--color-primary-blue-light);
+            fill: var(--color-primary-white);
+            border: 1px solid var(--color-primary-white);
+        }
+}
+

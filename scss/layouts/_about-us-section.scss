@@ -1,0 +1,41 @@
+
+
+.photo-before {
+    margin-left: 32px;
+}
+
+.photo-after {
+    margin-left: 209px;
+    /* translate: 0 -80px; */
+    transform: translateY(-80px);
+
+}
+.about-us {
+&__text {
+        line-height: 1.7;
+        font-size: 22px;
+    }
+
+    &__text-span {
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    &__container {
+        display: flex;
+
+    }
+
+    &__photo {
+        border-radius: 50%;
+    }
+
+    &__info {
+        max-width: 709px;
+    }
+
+    &__photos-top {
+        display: flex;
+        flex-basis: 50%;
+    }
+}

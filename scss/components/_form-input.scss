@@ -1,0 +1,26 @@
+.form-input {
+    width: 310px;
+    height: 52px;
+    border: 2px solid var(--color-secondary-grey-light);
+    border-radius: 32px;
+    background-color: transparent;
+    font-size: 13px;
+    line-height: 1.17;
+    padding: 18px 32px;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+
+    &::placeholder {
+    
+            color: var(--color-primary-white);
+    
+        }
+    
+        &:focus {
+            background-color: var(--color-secondary-grey-light);
+            outline: none;
+        }
+
+}
+

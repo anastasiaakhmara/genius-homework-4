@@ -1,0 +1,22 @@
+.button {
+    background-color: var(--color-primary-blue-light);
+    color: var(--color-primary-white);
+    border: 2px solid var(--color-primary-blue-light);
+    border-radius: 32px;
+    font-weight: 600;
+    width: 219px;
+    height: 53px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+
+    
+&:hover {
+        background-color: transparent;
+        color: var(--color-primary-blue-dark);
+
+    }
+}
+
