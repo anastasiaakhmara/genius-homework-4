@@ -2,34 +2,72 @@
 
 .hero-section {
 
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-image: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(./images/hero-section-background.jpg);
+  
 
     &__info {
         width: 100%;
         max-width: 529px;
-        padding-left: 106px;
-        padding-bottom: 126px;
+        padding-left: 26px;
+        padding-bottom: 56px;
 
+    
+    
+@media screen and (min-width: $bp-tablet) {
+    padding-left: 106px;
+    padding-bottom: 126px;
+ 
+    }
     }
 
     &__title {
-        font-size: 140px;
+       
         font-family: 'Play', sans-serif;
         font-weight: 700;
         color: var(--color-primary-blue-light);
-        padding-top: 16px;
-        padding-bottom: 40px;
+        padding-top: 0px;
+        padding-bottom: 30px;
         margin: 0;
+    font-size: 54px;
+text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+                font-size: 140px;
+                text-align: left;
+                padding-top: 16px;
+                padding-bottom: 40px;
+            }
 
     }
 
     &__text {
         font-size: 12px;
         color: var(--color-secondary-grey-dark);
-        padding-top: 16px;
+        padding-top: 8px;
+       padding-left: 60px;
+       line-height: 1.5;
+        @media screen and (min-width: $bp-tablet) {
+                padding-top: 16px;
+               
+            }
     }
+
+        &__paragraph {
+            font-size: 12px;
+            text-align: center;
+margin-bottom: 0;
+            @media screen and (min-width: $bp-tablet) {
+                    font-size: 18px;
+                    text-align: left;
+                    margin-bottom: 16px;
+                }
+        }
+
+        &__button {
+            margin-left: 50px;
+            
+            @media screen and (min-width: $bp-tablet) {
+                  
+                }
+        }
 
 }

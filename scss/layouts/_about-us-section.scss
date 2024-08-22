@@ -1,19 +1,34 @@
 
 
 .photo-before {
-    margin-left: 32px;
+   
+display: none;
+        @media screen and (min-width: $bp-tablet) {
+              display: block;
+        margin-left: 32px;
+            }
 }
 
 .photo-after {
+    display: none;
+@media screen and (min-width: $bp-tablet) {
+display: block;
     margin-left: 209px;
-    /* translate: 0 -80px; */
-    transform: translateY(-80px);
-
+        /* translate: 0 -80px; */
+        transform: translateY(-80px);
+    }
 }
 .about-us {
 &__text {
-        line-height: 1.7;
-        font-size: 22px;
+       
+font-size: 18px;
+    line-height: 1.4;
+
+        @media screen and (min-width: 768px) {
+        
+            line-height: 1.7;
+                font-size: 22px;
+            }
     }
 
     &__text-span {

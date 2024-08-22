@@ -24,6 +24,10 @@
         &__all-links {
             display: flex;
             gap: 186px;
+
+            @media screen and (min-width: $bp-tablet) {
+                    gap: 100px;
+                }
     
         }
     

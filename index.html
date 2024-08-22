@@ -8,11 +8,18 @@
     <!-- Styles -->
 
     <link rel="stylesheet" href="./scss/main.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__container"><nav class="header__nav">
+    <div class="background-main">
+<header class="header ">
+     
+        <div class="container ">
+        <div class="header__container ">
+          <nav class="header__nav">
           <a href="#"><svg class="header__icon logo-icon" width="74" height="42">
                 <use href="./images/icons.svg#icon-logo-ico"></use>
               </svg></a>
@@ -24,33 +31,46 @@
               <a class="link" href="#procedures-section">Наші процедури</a>
             </li>
             <li><a class="link" href="#contact-section">Контакти</a></li>
+            
           </ul>
           <div class="header__contact">
             <a href="tel:+380960000007"
-              ><svg class="header__icon" width="32" height="32">
+              ><svg class="header____social-icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-telephone-ico-light"></use>
               </svg>
             </a>
             <a href=""
-              ><svg class="header__icon" width="32" height="32">
+              ><svg class="header____social-icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-facebook-ico-light"></use>
               </svg>
             </a>
             <a href=""
-              ><svg class="header__icon" width="32" height="32">
+              ><svg class="header____social-icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-instagram-ico-light"></use>
               </svg>
             </a>
           </div>
+          
         </nav>
+        <button class="header__burger menu-btn-open"  type="button"><img src="./images/menu.svg" alt=""></button>
       </div>
       </div>
+      <div class="mobile-menu">
+        <button class="mobile-menu__btn-close menu-btn-close" type="button">
+          <img src="./images/close-ico.png" alt=""></button>
+         
+           <a href="#"><svg class="header__icon logo-icon mobile-menu__logo" width="74" height="42">
+                <use href="./images/icons.svg#icon-logo-ico"></use>
+              </svg></a>
+      </div>
+      
     </header>
     <main>
-      <section class="section hero-section">
+      
+        <section class="section hero-section">
         <div class="container">
           <div class="hero-section__info">
-            <p>Косметологічна клініка</p>
+            <p class="hero-section__paragraph">Косметологічна клініка</p>
             <h1 class="hero-section__title">Beauty Zone</h1>
             <button type="button" class="button hero-section__button modal-btn-open">
               Замовити дзвінок
@@ -62,6 +82,9 @@
           </div>
         </div>
       </section>
+      
+    </div>
+    
       <div class="background-wave">
         <section class="section" id="about-us__section">
           <div class="container">
@@ -171,42 +194,87 @@
           <h2 class="section__title section__title-centered">
             Наші <span class="accent section__title-span">процедури</span>
           </h2>
-          <div class="procedures-section__container">
-            <button type="button" class="carousel-button">
+          <div class="procedures-section__slider">
+            <button type="button" class="carousel-button prev">
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow-icon"></use>
               </svg>
             </button>
-            <ul class="procedures-section__list">
-              <li class="prosedures-section__item">
+            <div class="procedures-section__container swiper-container">
+              <ul class=" swiper-wrapper">
+              <li class="swiper-slide">
                 <article class="procedures-section__article">
                   <img
                     class="procedures-section__photo"
                     src="./images/procedure-girl-1-2.jpg"
                     alt="Дівчина на косметологічній профедурі"
                   />
+                  <p class="procedures-section__text">Маски <br>для обличчя</p>
                 </article>
               </li>
-              <li class="prosedures-section__item">
+              <li class="swiper-slide">
+                <article class="procedures-section__article">
+                  <img
+                    class="procedures-section__photo"
+                    src="./images/procedure-girl-1-2.jpg"
+                    alt="Дівчина на косметологічній профедурі"
+                  />
+                  <p class="procedures-section__text">Маски <br>для обличчя</p>
+                </article>
+              </li>
+              <li class="swiper-slide">
                 <article class="procedures-section__article">
                   <img
                     class="procedures-section__photo"
                     src="./images/procedure-girl-2-2.jpg"
                     alt="Дівчина на косметологічній профедурі"
                   />
+                   <p class="procedures-section__text">Ін'єкції <br>для обличчя</p>
                 </article>
               </li>
-              <li class="prosedures-section__item">
-                <article class="procedures-article">
+              <li class="swiper-slide">
+                <article class="procedures-section__article">
                   <img
                     class="procedures-section__photo"
                     src="./images/procedure-girl-3-3.jpg"
                     alt="Дівчина на косметологічній профедурі"
                   />
+                   <p class="procedures-section__text">Очищення <br>обличчя</p>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="procedures-section__article">
+                  <img
+                    class="procedures-section__photo"
+                    src="./images/procedure-girl-1-2.jpg"
+                    alt="Дівчина на косметологічній профедурі"
+                  />
+                  <p class="procedures-section__text">Маски <br>для обличчя</p>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="procedures-section__article">
+                  <img
+                    class="procedures-section__photo"
+                    src="./images/procedure-girl-2-2.jpg"
+                    alt="Дівчина на косметологічній профедурі"
+                  />
+                   <p class="procedures-section__text">Ін'єкції <br>для обличчя</p>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="procedures-section__article">
+                  <img
+                    class="procedures-section__photo"
+                    src="./images/procedure-girl-3-3.jpg"
+                    alt="Дівчина на косметологічній профедурі"
+                  />
+                   <p class="procedures-section__text">Очищення <br>обличчя</p>
                 </article>
               </li>
             </ul>
-            <button type="button" class="carousel-button">
+            </div>
+            <button type="button" class="carousel-button next">
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow-icon-right"></use>
               </svg>
@@ -369,7 +437,7 @@
      <div class="backdrop is-hidden">
       <div class="modal">
         <h2  class="modal__title">Замовити <br>дзвінок</h2>
-        <button type="button" class="modal-btn-close">Close</button>
+        <button type="button" class="modal-btn-close"><img src="./images/modal-btn-close-ico.png" alt="кнопка закрити"></button>
           <form class="modal__form" name="modal-form" autocomplete="off">
             <p class="modal__large-text">Запишіться <span class="modal__text-accent">безкоштовно</span> <br>
                 та отримайте подарунок</p>
@@ -419,5 +487,8 @@
        </div>
      </div>
      <script src="./modal.js"></script>
+     <script src="./mobile-menu.js"></script>
+     <script src="./procedures-slider.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

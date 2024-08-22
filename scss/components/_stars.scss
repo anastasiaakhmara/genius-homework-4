@@ -1,13 +1,18 @@
 .star-1 {
+   display: none;
+
+    @media screen and (min-width: $bp-tablet) {
     margin-left: 149px;
-    margin-top: 20px;
-    /* translate: 20px 0; */
-    transform: translateX(20px);
-    max-width: 64px;
-    animation-name: spin;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+        margin-top: 20px;
+        /* translate: 20px 0; */
+        transform: translateX(20px);
+        max-width: 64px;
+        animation-name: spin;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: block;
+        }
 }
 
 @keyframes spin {
@@ -23,19 +28,29 @@
 }
 
 .star-2 {
+display: none;
+  
 
-    margin-top: 9px;
-    animation-name: spin;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+@media screen and (min-width: $bp-tablet) {
+display: block;
+        margin-top: 9px;
+            animation-name: spin;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+    }
 }
 
 .star-3 {
-    margin-left: 140px;
-    margin-top: 270px;
-    animation-name: spin;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+display: none;
+display: block;
+    @media screen and (min-width: $bp-tablet) {
+    
+            margin-left: 140px;
+                margin-top: 270px;
+                animation-name: spin;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+        }
 }

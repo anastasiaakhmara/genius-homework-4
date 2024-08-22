@@ -7,20 +7,34 @@
 .section {
         padding: 48px 0;
 &__title {
-        font-family: 'Play', sans-serif;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 1.16;
+       
+font-size: 32px;
+line-height: 1.16;
+font-family: 'Play', sans-serif;
+    font-weight: 700;
+        @media screen and (min-width: 768px) {
+        
+               
+                    font-size: 64px;
+                  
+            }
     }
         &__title-centered {
             text-align: center;
         }
                 &__title-span {
+                   
+                    font-size: 32px;
                     font-family: 'Play', sans-serif;
-                    font-weight: 700;
-                    font-size: 64px;
-                    line-height: 1.16;
-                    color: var(--color-primary-blue-light);
+                        font-weight: 700;
+                        color: var(--color-primary-blue-light);
+                        line-height: 1.16;
+                    @media screen and (min-width: 768px) {
+                   
+                        font-size: 64px;
+                      
+                        
+                        }
         
                 }
 }
